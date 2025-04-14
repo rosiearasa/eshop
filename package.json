@@ -2,6 +2,7 @@
   "name": "proshop",
   "version": "1.0.0",
   "description": "Ecom mern stack",
+
   "type": "module",
   "main": "server.js",
   "scripts": {
@@ -9,8 +10,8 @@
     "server": "nodemon backend/server.js",
     "client": "npm run dev --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "data:import":"node backend/seeder.js",
-    "data:destroy":"node backend/seeder.js -d"
+    "data:import": "node backend/seeder.js",
+    "data:destroy": "node backend/seeder.js -d"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,7 @@
     "colors": "^1.4.0",
     "cors": "^2.8.5",
     "express": "^4.21.2",
+    "express-async-handler": "^1.2.0",
     "mongoose": "^8.12.1"
   },
   "devDependencies": {
