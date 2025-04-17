@@ -1,5 +1,6 @@
 import express from 'express';
 import cors from 'cors'
+import cookieParser from 'cookie-parser';
 
 
 import dotenv from 'dotenv';
@@ -18,7 +19,13 @@ const port = process.env.PORT||8001;
 
 connectDB();
 const app = express();
+
+app.use(express.json())
+app.use(express.urlencoded({extended:true}))
 app.use(cors())
+//cookie parsermiddleware
+app.use(cookieParser())
+
 app.get('/', (req, res)=> {
 res.send('API is Running...');
 });

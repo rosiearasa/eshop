@@ -18,7 +18,7 @@ const CartScreen = () => {
         dispatch(removeFromCart(id))
     }
     const checkoutHandler=()=>{
-navigate('/logn?redirecy=/shipping')
+navigate('/login?redirect=/shipping')
     };
 
   return (

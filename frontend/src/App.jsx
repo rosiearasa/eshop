@@ -1,4 +1,7 @@
 import React from "react";
+import {ToastContainer} from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+
 
 import { Outlet } from "react-router-dom";
 import { Container } from "react-bootstrap";
@@ -15,6 +18,7 @@ export const App = () => {
         </Container>
       </main>
       <Footer />
+      <ToastContainer/>
     </>
   );
 };
